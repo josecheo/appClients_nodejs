@@ -1,18 +1,3 @@
-
-//
-
-
-// const app = express();
-
-// // parse requests of content-type: application/json
-
-
-// parse requests of content-type: application/x-www-form-urlencoded
-
-
-// // simple route
-
-
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
@@ -31,7 +16,7 @@ app.use((req, res, next) => {
 });
 
 app.get("/", (req, res) => {
-    res.send({ message: recordset });
+    res.send({ message: 'Welcome_!!' });
 });
 
 
