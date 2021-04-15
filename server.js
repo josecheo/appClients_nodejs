@@ -36,7 +36,7 @@ app.get("/", (req, res) => {
 
 
 require("./app/routers/customer.routes")(app);
-app.listen(4000, function () {
+app.listen(process.env.PORT || 3000, function () {
     console.log('Server is running..');
 });
 
